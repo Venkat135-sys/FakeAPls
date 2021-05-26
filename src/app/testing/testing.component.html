@@ -1,0 +1,33 @@
+<table class="table text-center mt-5 text-warning ">
+    <thead>
+        <th>id</th>
+        <th>name</th>
+        <th>username</th>
+        <th>email</th>
+        <th>address-street</th>
+        <th>phone</th>
+        <th>website</th>
+        <th>company-name</th>
+        
+        
+        
+       
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let pobj of postdata">
+            <td>{{pobj.id}}</td>
+            <td>{{pobj.name}}</td>
+            <td>{{pobj.username}}</td>
+            <td>{{pobj.email}}</td>
+            <td>{{pobj.address.street}}</td>
+            <td>{{pobj.phone}}</td>
+            <td>{{pobj.website}}</td>
+            <td>{{pobj.company.name}}</td>
+           
+        </tr>
+    </tbody>
+</table>
+
+
+

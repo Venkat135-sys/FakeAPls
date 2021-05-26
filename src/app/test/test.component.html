@@ -1,0 +1,23 @@
+
+
+<div class="container mt-5">
+    <table class="table text-center text-warning">
+
+        <thead>
+            <th>ID</th>
+            <th>Name-of-user</th>
+            <th>Year</th>
+            <th>Color</th>
+            <th>pantone_value</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let userobj of userdata.data">
+                <td>{{userobj.id}}</td>
+                <td>{{userobj.name}}</td>
+                <td>{{userobj.year}}</td>
+                <td>{{userobj.color}}</td>
+                <td>{{userobj.pantone_value}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
